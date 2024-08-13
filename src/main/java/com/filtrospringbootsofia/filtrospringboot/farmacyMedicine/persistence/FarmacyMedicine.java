@@ -10,14 +10,18 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
 @Table( name = "farmacymedicine")
-public class farmacyMedicine {
+public class FarmacyMedicine {
 
     @Id
     @GeneratedValue( strategy =  GenerationType.IDENTITY)
@@ -30,6 +34,8 @@ public class farmacyMedicine {
     @ManyToOne
     @JoinColumn( name = "idmedicine")
     Medicine medicine;
+
+    double price;
 
 
     

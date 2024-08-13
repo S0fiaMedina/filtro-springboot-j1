@@ -12,4 +12,4 @@ INSERT INTO farmacy(namefarmacy,addressfarmacy, logofarmacy, longfarmacy, lat, c
 
 -- MEDICINA
 INSERT INTO medicine(proceedings,namemedicine, healthregister, description, descriptionshort, namerol, codeadminmode, codeap, codeum, codelab) VALUES ('xxxx', 'acetaminofen', 'ewree3w21', 'medicina para la fiebre', 'medicina', 'ROL', 1, 1,1,1 );
-INSERT INTO farmacymedicine(idfarmacy,idmedicine) VALUES (1, 1);
+INSERT INTO farmacymedicine(idfarmacy,idmedicine, price) VALUES (1, 1,500);
